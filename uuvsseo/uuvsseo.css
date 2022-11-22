@@ -1,0 +1,466 @@
+body {
+    margin: 0;
+}
+
+/* Kilder til inspirasjon for grid: https://lms.webtricks.blog/kurs/webutvikling/css-grid/grid-container#hf39e6d9ab168 , https://lms.webtricks.blog/kurs/webutvikling/css-grid/grid-items#h1279f664cc68 og https://css-tricks.com/snippets/css/complete-guide-grid/ */
+.container {
+    width: 100vw;
+    height: 100vh;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+    grid-template-columns: 175px 1fr 1fr 1fr;
+    grid-template-rows: 250px 600px 100px;
+
+
+    gap: 5px;
+    padding: 10px #fff;
+    box-sizing: border-box;
+}
+
+.container div{
+    padding: 10px;
+    border: 0px;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 5;
+/* Kilde til bakgrunnsbildet i header: https://www.pexels.com/nb-no/bilde/male-maleri-abstrakt-moderne-kunst-2693212/ */
+    background-image:url(painting.jpg);
+    color: rgb(160, 174, 188);
+    font-size: 60px;
+    text-align: center;
+    text-indent: 20rem;
+    line-height: 5;
+}
+
+.content-side {
+    grid-row-start: 2;
+    grid-row-end: auto;
+    grid-column-start: 1;
+    grid-column-end: auto;
+/* Kilde til bakgrunnsbildet i menyen: https://www.pexels.com/nb-no/bilde/hvit-klinkekule-marmor-overflate-1323712/ */
+    background-image:url(pexels_marble.jpg);
+    height: 2700px;
+}
+
+.content-main{
+    grid-row-start: 2;
+    grid-row-end: auto;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: #fff
+}
+
+.content-footer{
+    grid-row-start: 3;
+    grid-row-end: auto;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: rgb(53, 53, 53);
+
+
+    color: #fff;
+    text-align: center;
+    line-height: 6;
+    font-size: small;
+
+
+    
+    height: 100px;
+    margin-top: 2100px;
+    
+}
+
+/* Kilde til oppsett av menypunkter og hover-effekt: https://www.youtube.com/watch?v=Zn-zqtyLDVU&ab_channel=zFunxWebDevelopementIdeas */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    padding: 8px;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 8px;
+    color: rgb(93, 119, 144);
+    display: block;
+    transition: 0.3s;
+    line-height: 30px;
+}
+
+ul a:hover{
+    text-decoration: none;
+    color: rgb(70, 87, 104);
+    background-color: rgb(255, 255, 255);
+    opacity: 50%;
+    padding: 0px;
+    
+    display: block;
+    width: 18vh;
+    transition: 0.3s;
+}
+
+
+/* Kilder til inspirasjon for flexbox: https://lms.webtricks.blog/kurs/webutvikling/flexbox/flexbox-container#h142fa23a2c25 , https://lms.webtricks.blog/kurs/webutvikling/flexbox/flex-items#hb51b1e07fe96 og https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.flexbox-container{
+display:flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: flex-start;
+}
+
+.flex-item-1 {
+    width: 1215px;
+    height: 570px;
+    margin: 3px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(121, 112, 124);
+    
+    
+}
+
+
+.sitat {
+    text-indent: 150px;
+    margin: 5px;
+    
+}    
+
+
+ 
+
+/* Tabell UU vs SEO */
+/* Kilde til utforming av tabellene CMS og UU vs SEO: https://www.youtube.com/watch?v=yJQ9JEqznPM  */
+#table2 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.main2 {
+    background-color: rgb(243, 238, 247);
+}
+
+.mainleft2 {
+    background-color: rgb(243, 238, 247);
+}
+
+#table2 > div {
+    padding: 20px;
+    text-align: center;
+    border-left: 2px solid rgb(236, 233, 239);
+    border-top: 2px solid rgb(236, 233, 239);
+    border-right: 2px solid rgb(236, 233, 239);
+    border-bottom: 2px solid rgb(236, 233, 239);
+
+}
+
+
+/* Breakpoint UU vs SEO */
+/* Media quiery breakpoint kilder: https://stackoverflow.com/questions/11796297/div-show-hide-media-query og https://lms.webtricks.blog/kurs/webutvikling/responsivt-design/media-queries */
+@media only screen and (min-width: 661px)  {
+    #table4 {display: none;}
+    .main4 {display: none;}
+    .mainleft4 {display: none;}
+}
+
+@media only screen and (max-width: 660px)  {
+    #table2 {display: none}
+    .main2 {display: none}
+    .mainleft2 {display: none;}
+    .content-side {height: 350px;}
+    .content-footer{margin-top: 1950px}
+    #table4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 200px 300px 80px 200px 300px;
+    
+    }
+
+    .main4 {
+        background-color: rgb(243, 238, 247);
+        }
+    
+    .mainleft4 {
+        background-color: rgb(243, 238, 247);
+        }   
+    
+    #table4 > div {
+        padding: 20px;
+        text-align: center;
+        border-left: 2px solid rgb(236, 233, 239);
+        border-top: 2px solid rgb(236, 233, 239);
+        border-right: 2px solid rgb(236, 233, 239);
+        border-bottom: 2px solid rgb(236, 233, 239);
+        }
+    
+}
+
+
+
+
+
+
+
+/* Breakpoints nettside*/
+/* Media quiery breakpoint kilder: https://stackoverflow.com/questions/11796297/div-show-hide-media-query og https://lms.webtricks.blog/kurs/webutvikling/responsivt-design/media-queries */
+
+
+@media only screen and (min-width: 661px) and (max-width: 900px)  {
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        font-size: 20px;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 460px 320px 2200px 200px;
+    
+
+        gap: 5px;
+        padding: 10px #fff;
+        box-sizing: border-box;
+    }
+    
+    .container div{
+        padding: 10px;
+        border: 0px;
+    }
+    
+    .header {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    /* Kilde til bakgrunnsbildet i header: https://www.pexels.com/nb-no/bilde/male-maleri-abstrakt-moderne-kunst-2693212/ */
+        background-image:url(painting.jpg);
+        color: rgb(160, 174, 188);
+        font-size: 95px;
+        text-align: center;
+        text-indent: 0rem;
+        line-height: 5;
+    }
+    
+    .content-side {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    /* Kilde til bakgrunnsbildet i menyen: https://www.pexels.com/nb-no/bilde/hvit-klinkekule-marmor-overflate-1323712/ */
+        background-image:url(pexels_marble.jpg);
+        height: 500px;
+        
+    }
+    
+    
+    .content-main{
+        grid-row-start: 3;
+        grid-row-end: auto;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        background-color: rgb(236, 233, 239);
+        height: 0px;
+        font-size: 25px;
+        
+    }
+    
+    
+    .content-footer{
+        grid-row-start: 4;
+        grid-row-end: auto;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        background-color: rgb(53, 53, 53);
+        height: 200px;
+    
+        color: #fff;
+        text-align: center;
+        line-height: 10;
+        font-size:medium;
+    }
+
+
+    /* Kilde til oppsett av menypunkter og hover-effekt: https://www.youtube.com/watch?v=Zn-zqtyLDVU&ab_channel=zFunxWebDevelopementIdeas */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        text-decoration: none;
+        padding: 8px;
+        display:flex;
+        flex-direction:row;
+        font-size: 45px;
+        justify-content:space-evenly;
+    }
+    
+    ul li a{
+        text-decoration: none;
+        padding: 8px;
+        color: rgb(93, 119, 144);
+        display: block;
+        transition: 0.3s;
+        line-height: 0;
+    }
+
+    .flex-item-1 {
+        width: 1215px;
+        margin: 3px;
+
+        color: rgb(121, 112, 124);
+        height: 771px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 660px)  {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        font-size: 20px;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 560px 350px 3900px 300px;
+    
+
+        gap: 5px;
+        padding: 10px #fff;
+        box-sizing: border-box;
+    }
+    
+    .container div{
+        padding: 10px;
+        border: 0px;
+    }
+    
+    .header {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    /* Kilde til bakgrunnsbildet i header: https://www.pexels.com/nb-no/bilde/male-maleri-abstrakt-moderne-kunst-2693212/ */
+        background-image:url(painting.jpg);
+        color: rgb(160, 174, 188);
+        font-size: 130px;
+        text-align: center;
+        text-indent: 0rem;
+        line-height: 5;
+        
+    }
+    
+    .content-side {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    /* Kilde til bakgrunnsbildet i menyen: https://www.pexels.com/nb-no/bilde/hvit-klinkekule-marmor-overflate-1323712/ */
+        background-image:url(pexels_marble.jpg);
+    }
+    
+    
+    .content-main{
+        grid-row-start: 3;
+        grid-row-end: auto;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        background-color: rgb(236, 233, 239);
+        height: 1200px;
+        font-size: 35px;
+    }
+    
+    
+    .content-footer{
+        grid-row-start: 4;
+        grid-row-end: auto;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        background-color: rgb(53, 53, 53);
+        height: 300px;
+    
+        color: #fff;
+        text-align: center;
+        line-height: 16;
+        font-size:large;
+    }
+
+
+    /* Kilde til oppsett av menypunkter og hover-effekt: https://www.youtube.com/watch?v=Zn-zqtyLDVU&ab_channel=zFunxWebDevelopementIdeas */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        text-decoration: none;
+        padding: 8px;
+        display:flex;
+        flex-direction:row;
+        font-size: 55px;
+        justify-content:space-evenly;
+       
+    }
+    
+    ul li a{
+        text-decoration: none;
+        padding: 8px;
+        color: rgb(93, 119, 144);
+        display: block;
+        transition: 0.3s;
+        line-height: 0;
+       
+    }
+
+    .flex-item-1 {
+        width: 1315px;
+        height: 1100px;
+        margin: 3px;
+ 
+        color: rgb(121, 112, 124);
+    }
+    
+
+}
+
+
+
+/* Kilde til delingsknapper design og hover-effekt: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-pinterest {
+    background: #e02e2e;
+    color: white;
+  }
+
+
