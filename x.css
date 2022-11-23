@@ -29,7 +29,7 @@ body {
     grid-column-start: 1;
     grid-column-end: 5;
 /* Kilde til bakgrunnsbildet i header: https://www.pexels.com/nb-no/bilde/male-maleri-abstrakt-moderne-kunst-2693212/ */
-    background-image:url(painting.jpg);
+    background-image:url(painting.avif);
     color: rgb(160, 174, 188);
     font-size: 60px;
     text-align: center;
@@ -177,11 +177,15 @@ justify-content: flex-start;
         border: 0px;
     }
 
+    .del{
+        display: none;
+    }
+
     .header {
         grid-column-start: 1;
         grid-column-end: 5;
     /* Kilde til bakgrunnsbildet i header: https://www.pexels.com/nb-no/bilde/male-maleri-abstrakt-moderne-kunst-2693212/ */
-        background-image:url(painting.jpg);
+        background-image:url(painting.avif);
         color: rgb(160, 174, 188);
         font-size: 95px;
         text-align: center;
@@ -311,11 +315,15 @@ justify-content: flex-start;
         border: 0px;
     }
     
+    .del{
+        display: none;
+    }
+
     .header {
         grid-column-start: 1;
         grid-column-end: 5;
     /* Kilde til bakgrunnsbildet i header: https://www.pexels.com/nb-no/bilde/male-maleri-abstrakt-moderne-kunst-2693212/ */
-        background-image:url(painting.jpg);
+        background-image:url(painting.avif);
         color: rgb(160, 174, 188);
         font-size: 130px;
         text-align: center;
