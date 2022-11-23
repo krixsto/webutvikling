@@ -52,6 +52,7 @@ body {
     grid-row-end: auto;
     grid-column-start: 2;
     grid-column-end: 5;
+    height: 500px;
     background-color: #fff
 }
 
@@ -117,7 +118,7 @@ justify-content: flex-start;
 
 .flex-item-1 {
     width: 1215px;
-    height: 170px;
+    height: 400px;
     margin: 3px;
     background-color: rgb(255, 255, 255);
     color: rgb(121, 112, 124);
@@ -132,7 +133,7 @@ justify-content: flex-start;
 /* Kilde til utforming av tabellen: https://www.youtube.com/watch?v=yJQ9JEqznPM  */
 #table {
     display: grid;
-    grid-template-columns: 170px 1fr;
+    grid-template-columns: 200px 1fr;
     grid-template-rows: 70px 820px 70px 200px 70px 250px 70px 180px 70px 400px 70px 200px 70px 370px 70px 380px 70px 600px 70px 600px;
 
 }
@@ -161,7 +162,6 @@ justify-content: flex-start;
 @media only screen and (min-width: 661px)  {
     #table3 {display: none;}
     .main3 {display: none;}
-    
     .mainleft3 {display: none;}
 }
 
@@ -309,13 +309,9 @@ justify-content: flex-start;
         margin: 3px;
 
         color: rgb(121, 112, 124);
-        height: 350px;
+        height: 470px;
     }
-
-    
 }
-
-
 
 
 @media only screen and (min-width: 0px) and (max-width: 660px)  {
@@ -328,7 +324,7 @@ justify-content: flex-start;
     
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 560px 350px 4600px 300px;
+        grid-template-rows: 560px 350px 5600px 300px;
     
 
         gap: 5px;
@@ -415,16 +411,13 @@ justify-content: flex-start;
         color: rgb(93, 119, 144);
         display: block;
         transition: 0.3s;
-        line-height: 0;
-       
+        line-height: 0;   
     }
     
 
-
-
     .flex-item-1 {
         width: 1215px;
-        height: 350px;
+        height: 600px;
         margin: 3px;
 
         color: rgb(121, 112, 124);
