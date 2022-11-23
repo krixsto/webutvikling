@@ -14,7 +14,6 @@ body {
     grid-template-columns: 175px 1fr 1fr 1fr;
     grid-template-rows: 250px 600px 100px;
 
-
     gap: 5px;
     padding: 10px #fff;
     box-sizing: border-box;
@@ -62,17 +61,13 @@ body {
     grid-column-end: 5;
     background-color: rgb(53, 53, 53);
 
-
     color: #fff;
     text-align: center;
     line-height: 6;
     font-size: small;
-
-
     
     height: 100px;
     margin-top: 2110px;
-    
 }
 
 /* Kilde til oppsett av menypunkter og hover-effekt: https://www.youtube.com/watch?v=Zn-zqtyLDVU&ab_channel=zFunxWebDevelopementIdeas */
@@ -82,7 +77,6 @@ ul {
     padding: 0;
     text-decoration: none;
     padding: 8px;
-    
 }
 
 ul li a{
@@ -99,10 +93,6 @@ ul a:hover{
     color: rgb(70, 87, 104);
     background-color: rgb(255, 255, 255);
     opacity: 50%;
-    padding: 0px;
-    
-    display: block;
-    width: 18vh;
     transition: 0.3s;
 }
 
@@ -121,25 +111,19 @@ justify-content: flex-start;
     margin: 3px;
     background-color: rgb(255, 255, 255);
     color: rgb(121, 112, 124);
-    
-    
 }
 
 
 .sitat {
     text-indent: 150px;
     margin: 5px;
-    
 }    
-
-
 
 
 
 
 /* Breakpoints nettside*/
 /* Media quiery breakpoint kilder: https://stackoverflow.com/questions/11796297/div-show-hide-media-query og https://lms.webtricks.blog/kurs/webutvikling/responsivt-design/media-queries */
-
 
 @media only screen and (min-width: 661px) and (max-width: 900px)  {
 
@@ -153,7 +137,6 @@ justify-content: flex-start;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 460px 350px 250px 200px;
-    
 
         gap: 5px;
         padding: 10px #fff;
@@ -191,7 +174,6 @@ justify-content: flex-start;
         height: 350px;
     }
     
-    
     .content-main{
         grid-row-start: 3;
         grid-row-end: auto;
@@ -200,9 +182,7 @@ justify-content: flex-start;
         background-color: rgb(236, 233, 239);
         height: 0px;
         font-size: 25px;
-        
     }
-    
     
     .content-footer{
         grid-row-start: 4;
@@ -246,13 +226,8 @@ justify-content: flex-start;
         margin: 3px;
 
         color: rgb(121, 112, 124);
-        
-        
     }
-
 }
-
-
 
 
 
@@ -295,7 +270,6 @@ justify-content: flex-start;
         text-align: center;
         text-indent: 0rem;
         line-height: 5;
-        
     }
     
     .content-side {
@@ -308,7 +282,6 @@ justify-content: flex-start;
         height: 350px;
     }
     
-    
     .content-main{
         grid-row-start: 3;
         grid-row-end: auto;
@@ -318,7 +291,6 @@ justify-content: flex-start;
         height: 0px;
         font-size: 35px;
     }
-    
     
     .content-footer{
         grid-row-start: 4;
@@ -334,7 +306,6 @@ justify-content: flex-start;
         font-size:large;
     }
 
-
     /* Kilde til oppsett av menypunkter og hover-effekt: https://www.youtube.com/watch?v=Zn-zqtyLDVU&ab_channel=zFunxWebDevelopementIdeas */
     ul {
         list-style-type: none;
@@ -345,7 +316,6 @@ justify-content: flex-start;
         flex-direction:row;
         font-size: 55px;
         justify-content:space-evenly;
-       
     }
     
     ul li a{
@@ -355,12 +325,7 @@ justify-content: flex-start;
         display: block;
         transition: 0.3s;
         line-height: 0;
-       
     }
-   
-    
-
-
 
     .flex-item-1 {
         width: 1215px;
@@ -369,14 +334,11 @@ justify-content: flex-start;
 
         color: rgb(121, 112, 124);
     }
-    
-
 }
 
 
 
-
-/* Kilde til delingsknapper design og hover-effekt: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+/* Kilde til delingsknapper - design og hover-effekt: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
 .fa {
     padding: 10px;
     font-size: 30px;
@@ -408,12 +370,6 @@ justify-content: flex-start;
 
 
 
-
-
-
-
-
-
 /* Kilde til kontaktskjema: https://codepen.io/ZachSaucier/pen/jOwNvO */
 form { max-width:800px; margin:50px auto; margin-left: 0px;}
 
@@ -421,38 +377,34 @@ form { max-width:800px; margin:50px auto; margin-left: 0px;}
   color:rgb(35, 35, 35);
   font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
-  border-radius: 5px;
-  line-height: 22px;
   background-color: transparent;
   border:2px solid rgb(118, 119, 136);
   transition: all 0.5s;
-  padding: 13px;
-  margin-bottom: 15px;
   width:100%;
   box-sizing: border-box;
-  outline:0;
+  padding: 15px;
+  margin-bottom: 15px;
+  line-height: 25px;
+  
 }
-
-.feedback-input:focus { border:2px solid rgb(94, 95, 108); }
 
 textarea {
   height: 150px;
-  line-height: 150%;
+  line-height: 100%;
 }
 
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
   background:rgb(118, 119, 136);
+  color:white;
   border-radius:5px;
   border:0;
   cursor:pointer;
-  color:white;
   font-size:24px;
+  margin-top:-4px;
   padding-top:18px;
   padding-bottom:10px;
   transition: all 0.5s;
-  margin-top:-4px;
-  font-weight:700;
 }
 [type="submit"]:hover { background:rgb(94, 95, 108); }

@@ -93,13 +93,8 @@ ul a:hover{
     color: rgb(70, 87, 104);
     background-color: rgb(255, 255, 255);
     opacity: 50%;
-    padding: 0px;
-    
-    display: block;
-    width: 18vh;
     transition: 0.3s;
 }
-
 
 
 
@@ -145,14 +140,8 @@ justify-content: flex-start;
 }
 
 
-
-
-
-
-
 /* Breakpoints nettside*/
 /* Media quiery breakpoint kilder: https://stackoverflow.com/questions/11796297/div-show-hide-media-query og https://lms.webtricks.blog/kurs/webutvikling/responsivt-design/media-queries */
-
 
 @media only screen and (min-width: 661px) and (max-width: 900px)  {
     .container {
@@ -285,7 +274,6 @@ justify-content: flex-start;
         color: rgb(121, 112, 124);
     }
 }
-
 
 
 
@@ -426,7 +414,7 @@ justify-content: flex-start;
 }
 
 
-/* Kilde til delingsknapper design og hover-effekt: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+/* Kilde til delingsknapper - design og hover-effekt: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
 .fa {
     padding: 10px;
     font-size: 30px;
