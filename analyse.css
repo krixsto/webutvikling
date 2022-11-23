@@ -44,7 +44,7 @@ body {
     grid-column-end: auto;
 /* Kilde til bakgrunnsbildet i menyen: https://www.pexels.com/nb-no/bilde/hvit-klinkekule-marmor-overflate-1323712/ */
     background-image:url(pexels_marble.jpg);
-    height: 3040px;
+    height: 7700px;
 }
 
 .content-main{
@@ -71,7 +71,7 @@ body {
 
     
     height: 100px;
-    margin-top: 2100px;
+    margin-top: 7100px;
     
 }
 
@@ -117,22 +117,23 @@ justify-content: flex-start;
 
 .flex-item-1 {
     width: 1215px;
-    height: 120px;
+    height: 170px;
     margin: 3px;
     background-color: rgb(255, 255, 255);
     color: rgb(121, 112, 124);
     
     
-}
+}  
 
 
 
 
-/* Tabell CMS */
-/* Kilde til utforming av tabellene CMS og UU vs SEO: https://www.youtube.com/watch?v=yJQ9JEqznPM  */
+/* Tabell analyse */
+/* Kilde til utforming av tabellen: https://www.youtube.com/watch?v=yJQ9JEqznPM  */
 #table {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: 170px 1fr;
+    grid-template-rows: 70px 820px 70px 200px 70px 250px 70px 180px 70px 400px 70px 200px 70px 370px 70px 380px 70px 600px 70px 600px;
 
 }
 
@@ -154,25 +155,26 @@ justify-content: flex-start;
 
 }
 
-/* Breakpoint CMS */
+
+/* Breakpoint tabell */
 /* Media quiery breakpoint kilder: https://stackoverflow.com/questions/11796297/div-show-hide-media-query og https://lms.webtricks.blog/kurs/webutvikling/responsivt-design/media-queries */
-@media only screen and (min-width: 601px)  {
+@media only screen and (min-width: 661px)  {
     #table3 {display: none;}
     .main3 {display: none;}
+    
     .mainleft3 {display: none;}
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 660px)  {
     #table {display: none}
     .main {display: none}
     .mainleft {display: none;}
-    .content-side {height: 2200px;}
-    .content-footer{margin-top: 1500px}
+    .content-side {height: 350px;}
+    .content-footer{margin-top: 4000px}
     #table3 {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50px 100px 100px 100px 50px 100px 100px 100px 50px 100px 100px 100px;
-    
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 900px 100px 300px 100px 300px 100px 250px 100px 500px 100px 370px 100px 470px 100px 470px 100px 700px 100px 700px;
     }
 
     .main3 {
@@ -197,6 +199,8 @@ justify-content: flex-start;
  
 
 
+
+
 /* Breakpoints nettside*/
 /* Media quiery breakpoint kilder: https://stackoverflow.com/questions/11796297/div-show-hide-media-query og https://lms.webtricks.blog/kurs/webutvikling/responsivt-design/media-queries */
 
@@ -212,7 +216,7 @@ justify-content: flex-start;
     
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 460px 340px 2200px 200px;
+        grid-template-rows: 460px 340px 1800px 200px;
     
 
         gap: 5px;
@@ -223,6 +227,10 @@ justify-content: flex-start;
     .container div{
         padding: 10px;
         border: 0px;
+    }
+
+    .del{
+        display: none;
     }
     
     .header {
@@ -244,6 +252,7 @@ justify-content: flex-start;
         grid-column-end: 5;
     /* Kilde til bakgrunnsbildet i menyen: https://www.pexels.com/nb-no/bilde/hvit-klinkekule-marmor-overflate-1323712/ */
         background-image:url(pexels_marble.jpg);
+        height: 500px;
     }
     
     
@@ -253,7 +262,7 @@ justify-content: flex-start;
         grid-column-start: 1;
         grid-column-end: 5;
         background-color: rgb(236, 233, 239);
-        height: 1200px;
+        height: 0px;
         font-size: 25px;
         
     }
@@ -265,12 +274,12 @@ justify-content: flex-start;
         grid-column-start: 1;
         grid-column-end: 5;
         background-color: rgb(53, 53, 53);
-        height: 200px;
+        height: 300px;
     
         color: #fff;
         text-align: center;
-        line-height: 10;
-        font-size:medium;
+        line-height: 12;
+        font-size:x-large;
     }
 
 
@@ -297,17 +306,14 @@ justify-content: flex-start;
 
     .flex-item-1 {
         width: 1215px;
-        height: 271px;
         margin: 3px;
-        background-color: rgb(236, 233, 239);
+
         color: rgb(121, 112, 124);
-        height: 671px;
+        height: 350px;
     }
 
+    
 }
-
-
-
 
 
 
@@ -322,7 +328,7 @@ justify-content: flex-start;
     
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 560px 350px 2200px 300px;
+        grid-template-rows: 560px 350px 4600px 300px;
     
 
         gap: 5px;
@@ -333,6 +339,10 @@ justify-content: flex-start;
     .container div{
         padding: 10px;
         border: 0px;
+    }
+
+    .del{
+        display: none;
     }
     
     .header {
@@ -364,7 +374,7 @@ justify-content: flex-start;
         grid-column-start: 1;
         grid-column-end: 5;
         background-color: rgb(236, 233, 239);
-        height: 1200px;
+        height: 0px;
         font-size: 35px;
     }
     
@@ -380,9 +390,10 @@ justify-content: flex-start;
     
         color: #fff;
         text-align: center;
-        line-height: 16;
-        font-size:large;
+        line-height: 12;
+        font-size:x-large;
     }
+
 
 
     /* Kilde til oppsett av menypunkter og hover-effekt: https://www.youtube.com/watch?v=Zn-zqtyLDVU&ab_channel=zFunxWebDevelopementIdeas */
@@ -413,13 +424,12 @@ justify-content: flex-start;
 
     .flex-item-1 {
         width: 1215px;
-        height: 671px;
+        height: 350px;
         margin: 3px;
-        background-color: rgb(236, 233, 239);
+
         color: rgb(121, 112, 124);
     }
     
-
 }
 
 
@@ -453,3 +463,4 @@ justify-content: flex-start;
     background: #e02e2e;
     color: white;
   }
+

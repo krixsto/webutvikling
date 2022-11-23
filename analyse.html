@@ -12,9 +12,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 
 
-
-
-
 <!-- Kilde til twitter cards: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image -->
     <meta property='twitter:title' content="Webutvikling - Analyse"/>
     <meta property='twitter:image' content="https://krixsto.github.io/painting.jpg"/>
@@ -53,35 +50,132 @@
         <a href="https://pinterest.com/" aria-label="Pinterest" class="fa fa-pinterest"></a>
     </div>
 
+
+<section class="flexbox-container">
+    <div class="content-main">
+        <div class="flex-item-1"><h1><span style="text-decoration:none;color:rgb(62, 62, 62)">Analyse</span></h1>   
+            <p><a href="tilgjengelighetserklæring.html" style="text-decoration:none;color:rgb(129, 97, 124)">Her finner du nettsidens tilgjengelighetserklæring</a></p>
+            <div class="flex-item-1"><h3><a style="text-decoration:none;color:rgb(62, 62, 62)">Resultater av analyse</a></h3>
+            <p>Analysen ble gjennomført ved hjelp av analyseverktøyet <i>Lighthouse</i>. Hovedsiden ble analysert og endringer ble implementert her først. Basert på resultatene av analysen ble det så gjort endringer på de resterende sidene.</p></div>
+            <!-- Analyseverktøyet Lighthouse: https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk -->  
+       
+
+<!-- Kilde til de ulike retningslinjene: https://www.w3.org/WAI/WCAG21/quickref/ og https://www.uutilsynet.no/wcag-standarden/wcag-20-standarden/86 -->
+<div id="table">
+    <div class="main"></div>
+    <div class="main">FØR</div>
+    <div class="main">UU</div>
+    <div><img src="accessibility.png" alt="accessibility"><p>Sosiale medier-linkene mangler beskrivende navn.</p></div>
+
+    <div class="mainleft"></div>
+    <div class="mainleft">ETTER</div>
+    <div class="mainleft">UU</div>
+    <div><img src="accessibility2.png" alt="accessibility2"><p>Siden dette er knapper som fungerer kun som et design-element, brukte jeg aria-labels til å rette feilen og samtidig ikke legge til noe synlig tekst. Det samme tiltaket gjorde jeg for kartet på kontakt oss-siden.</p></div>
+
+    <div class="mainleft"></div>
+    <div class="mainleft">FØR</div>
+    <div class="mainleft">SEO 1</div>
+    <div><img src="seo.png" alt="seo"><p>Dokumentet manglet meta-description.</p></div>
+
+    <div class="mainleft"></div>
+    <div class="mainleft">ETTER</div>
+    <div class="mainleft">SEO 1</div>
+    <div><img src="seo2.png" alt="seo2"><p>La til meta-description (på alle sidene).</p></div>
+
+    <div class="mainleft"></div>
+    <div class="mainleft">FØR</div>
+    <div class="mainleft">SEO 2</div>
+    <div><img src="seo3.png" alt="seo3"><p>Link var ikke "crawlable".</p></div>
+
+    <div class="mainleft"></div>
+    <div class="mainleft">ETTER</div>
+    <div class="mainleft">SEO 2</div>
+    <div><img src="seo4.png" alt="seo4"><p>Siden denne linken egentlig ikke er ment å være en link, men kun tekst, byttet jeg ut a-tagen med en span-tag. Jeg ordnet også opp i lenker på de andre innholdssidene med det samme problemet.</p></div>
+
+    <div class="mainleft"></div>
+    <div class="mainleft">FØR</div>
+    <div class="mainleft">HEURISTISK VURDERING 1</div>
+    <div><img src="heuristisk1.png" width="220" height="250" alt="heuristisk1"><p>Svak farge på menypunktene og mangler tydelig markering for hvilken side brukeren befinner seg på.</p></div>
+
+    <div class="mainleft"></div>
+    <div class="mainleft">ETTER</div>
+    <div class="mainleft">HEURISTISK VURDERING 1</div>
+    <div><img src="heuristisk2.png" width="220" height="250" alt="heuristisk2"><p>Sterkere tekstfarge på menypunktene og mørk lillafarge som markerer hvor brukeren befinner seg, for bedre brukervennlighet.</p></div>
+
+    <div class="mainleft"></div>
+    <div class="mainleft">FØR</div>
+    <div class="mainleft">HEURISTISK VURDERING 2</div>
+    <div><img src="heuristisk3.png" alt="heuristisk3"><p>"Kontakt oss"-knappen på hovedsiden var merket med en annen farge enn den i menypunktet.</p></div>
+
+    <div class="mainleft"></div>
+    <div class="mainleft">ETTER</div>
+    <div class="mainleft">HEURISTISK VURDERING 2</div>
+    <div><img src="heuristisk4.png" alt="heuristisk4"><p>For å markere bedre at disse lenkene begge fører til samme side, endret jeg tekstfargen så de ble like.</p></div>
+</div>
+
+
+    <div id="table3">
+        <div class="main3">UU: FØR</div>
+        <div><img src="accessibility.png" alt="accessibility"><p>Sosiale medier-linkene mangler beskrivende navn.</p></div>
+
+        <div class="mainleft3">UU: ETTER</div>
+        <div><img src="accessibility2.png" alt="accessibility2"><p>Siden dette er knapper som fungerer kun som et design-element, brukte jeg aria-labels til å rette feilen og samtidig ikke legge til noe synlig tekst. Det samme tiltaket gjorde jeg for kartet på kontakt oss-siden.</p></div>
+
+        <div class="mainleft3">SEO 1: FØR</div>
+        <div><img src="seo.png" alt="seo"><p>Dokumentet manglet meta-description.</p></div>
+
+        <div class="mainleft3">SEO 1: ETTER</div>
+        <div><img src="seo2.png" alt="seo2"><p>La til meta-description (på alle sidene).</p></div>
         
-        <section class="flexbox-container">
-        <div class="content-main">
-<!-- Kilde til innholdsteksten i artikkelboksen under: https://loremipsum.io/generator/?n=5&t=p -->
-            <div class="flex-item-1"><h1><a style="text-decoration:none;color:rgb(62, 62, 62)">Analyse</a></h1>
-            <p><a href="tilgjengelighetserklæring.html" style="text-decoration:none;color:rgb(129, 97, 124)">Her finner du nettsidens tilgjengelighetserklæring</a></p></div>
-            <p>Analysen er gjort ved hjelp av analyseverktøyet<i>Lighthouse</i>.</p>
-            <p>Nec ullamcorper sit amet risus nullam eget felis eget nunc. Vestibulum sed arcu non odio euismod lacinia at. Vitae auctor eu augue ut lectus. Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Feugiat in fermentum posuere urna nec tincidunt praesent. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Pulvinar pellentesque habitant morbi tristique senectus et netus. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Tincidunt eget nullam non nisi est sit amet facilisis magna. Vitae et leo duis ut diam quam nulla porttitor massa. Blandit volutpat maecenas volutpat blandit. Eleifend donec pretium vulputate sapien nec. Commodo quis imperdiet massa tincidunt nunc pulvinar. Imperdiet proin fermentum leo vel orci. Risus nullam eget felis eget nunc lobortis mattis aliquam. Ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum.
-            </p></div>
-        </div>
-        </section>
+        <div class="mainleft3">SEO 2: FØR</div>
+        <div><img src="seo3.png" alt="seo3"><p>Link var ikke "crawlable".</p></div>
 
-            <div class="content-footer">kriststo@hiof.no</div>
+        <div class="mainleft3">SEO 2: ETTER</div>
+        <div><img src="seo4.png" alt="seo4"><p>Siden denne linken egentlig ikke er ment å være en link, men kun tekst, byttet jeg ut a-tagen med en span-tag. Jeg ordnet også opp i lenker på de andre innholdssidene med det samme problemet.</p></div>
+
+        <div class="mainleft3">HEURISTISK VURDERING 1: FØR</div>
+        <div><img src="heuristisk1.png" width="220" height="250" alt="heuristisk1"><p>Svak farge på menypunktene og mangler tydelig markering for hvilken side brukeren befinner seg på.</p></div>
+
+        <div class="mainleft3">HEURISTISK VURDERING 1: ETTER</div>
+        <div><img src="heuristisk2.png" width="220" height="250" alt="heuristisk2"><p>Sterkere tekstfarge på menypunktene og mørk lillafarge som markerer hvor brukeren befinner seg, for bedre brukervennlighet.</p></div>
+
+        <div class="mainleft3">HEURISTISK VURDERING 2: FØR</div>
+        <div><img src="heuristisk3.png" alt="heuristisk3"><p>"Kontakt oss"-knappen på hovedsiden var merket med en annen farge enn den i menypunktet.</p></div>
+
+        <div class="mainleft3">HEURISTISK VURDERING 2: ETTER</div>
+        <div><img src="heuristisk4.png" alt="heuristisk4"><p>For å markere bedre at disse lenkene begge fører til samme side, endret jeg tekstfargen så de ble like.</p></div>
     </div>
-    </body>
+
+
+        <div class="content-main">
+            <div class="flex-item-2"><h2><span style="text-decoration:none;color:rgb(62, 62, 62)">Skjermbilder</span></h2>   
+                <p>Under er resultatene for sluttanalysen av henholdsvis hjem-siden, analyse-siden, CMS-siden, UU vs SEO-siden, kontakt oss-siden og tilgjengelighetserklæring-siden:
+                <br><br><br>
+
+                </p>
+                </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    </section>
+
+        <div class="content-footer">kriststo@hiof.no</div>
+</div>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
 
 

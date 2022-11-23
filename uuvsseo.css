@@ -173,7 +173,7 @@ justify-content: flex-start;
     #table2 {display: none}
     .main2 {display: none}
     .mainleft2 {display: none;}
-    .content-side {height: 350px;}
+    .content-side {height: 2200px;}
     .content-footer{margin-top: 1950px}
     #table4 {
         display: grid;
@@ -233,6 +233,10 @@ justify-content: flex-start;
     .container div{
         padding: 10px;
         border: 0px;
+    }
+
+    .del{
+        display: none;
     }
     
     .header {
@@ -347,6 +351,10 @@ justify-content: flex-start;
         padding: 10px;
         border: 0px;
     }
+
+    .del{
+        display: none;
+    }
     
     .header {
         grid-column-start: 1;
@@ -368,6 +376,7 @@ justify-content: flex-start;
         grid-column-end: 5;
     /* Kilde til bakgrunnsbildet i menyen: https://www.pexels.com/nb-no/bilde/hvit-klinkekule-marmor-overflate-1323712/ */
         background-image:url(pexels_marble.jpg);
+        height: 350px;
     }
     
     
