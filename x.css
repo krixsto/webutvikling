@@ -1,9 +1,14 @@
 body {
     margin: 0;
+    overflow-x: hidden !important;
 }
+
+
 
 /* Kilder til inspirasjon for grid: https://lms.webtricks.blog/kurs/webutvikling/css-grid/grid-container#hf39e6d9ab168 , https://lms.webtricks.blog/kurs/webutvikling/css-grid/grid-items#h1279f664cc68 og https://css-tricks.com/snippets/css/complete-guide-grid/ */
 .container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
     width: 100vw;
     height: 100vh;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
