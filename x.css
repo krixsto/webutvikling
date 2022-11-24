@@ -52,7 +52,6 @@ body {
     grid-row-end: auto;
     grid-column-start: 2;
     grid-column-end: 5;
-    height: 1500px;
     background-color: rgb(236, 233, 239);
 }
 
@@ -108,12 +107,16 @@ justify-content: flex-start;
 }
 
 .flex-item-1 {
+    width: 1215px;
+    height: 271px;
     margin: 3px;
     background-color: rgb(236, 233, 239);
     color: rgb(121, 112, 124);
 }
 
 .flex-item-2{
+    width: 1215px;
+    height: 271px;
     margin: 3px;
     background-color: rgb(255, 255, 255);
     color: rgb(121, 112, 124);
@@ -121,12 +124,16 @@ justify-content: flex-start;
 }
 
 .flex-item-3{
+    width: 1215px;
+    height: 271px;
     margin: 3px;
     background-color: rgb(255, 255, 255);
     color: rgb(121, 112, 124);
 }
 
 .flex-item-4{
+    width: 1215px;
+    height: 271px;
     margin: 3px;
     background-color: rgb(255, 255, 255);
     color: rgb(121, 112, 124);
@@ -235,12 +242,16 @@ justify-content: flex-start;
     
 
     .flex-item-1 {
+        width: 1215px;
+        height: 450px;
         margin: 3px;
         background-color: rgb(236, 233, 239);
         color: rgb(121, 112, 124);
     }
     
     .flex-item-2{
+        width: 1215px;
+        height: 400px;
         margin: 3px;
         background-color: rgb(255, 255, 255);
         color: rgb(121, 112, 124);
@@ -248,12 +259,16 @@ justify-content: flex-start;
     }
     
     .flex-item-3{
+        width: 1215px;
+        height: 400px;
         margin: 3px;
         background-color: rgb(255, 255, 255);
         color: rgb(121, 112, 124);
     }
     
     .flex-item-4{
+        width: 1215px;
+        height: 838px;
         margin: 3px;
         background-color: rgb(255, 255, 255);
         color: rgb(121, 112, 124);
@@ -365,12 +380,16 @@ justify-content: flex-start;
 
 
     .flex-item-1 {
+        width: 1215px;
+        height: 470px;
         margin: 3px;
         background-color: rgb(236, 233, 239);
         color: rgb(121, 112, 124);
     }
     
     .flex-item-2{
+        width: 1215px;
+        height: 420px;
         margin: 3px;
         background-color: rgb(255, 255, 255);
         color: rgb(121, 112, 124);
@@ -378,12 +397,16 @@ justify-content: flex-start;
     }
     
     .flex-item-3{
+        width: 1215px;
+        height: 450px;
         margin: 3px;
         background-color: rgb(255, 255, 255);
         color: rgb(121, 112, 124);
     }
     
     .flex-item-4{
+        width: 1215px;
+        height: 750px;
         margin: 3px;
         background-color: rgb(255, 255, 255);
         color: rgb(121, 112, 124);
