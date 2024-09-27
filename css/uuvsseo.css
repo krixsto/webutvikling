@@ -28,7 +28,7 @@ body {
     grid-column-start: 1;
     grid-column-end: 5;
 /* Kilde til bakgrunnsbildet i header: https://www.pexels.com/nb-no/bilde/male-maleri-abstrakt-moderne-kunst-2693212/ */
-    background-image:url(painting.jpg);
+    background-image:url(/bilder/painting.jpg);
     color: rgb(160, 174, 188);
     font-size: 60px;
     text-align: center;
@@ -42,7 +42,7 @@ body {
     grid-column-start: 1;
     grid-column-end: auto;
 /* Kilde til bakgrunnsbildet i menyen: https://www.pexels.com/nb-no/bilde/hvit-klinkekule-marmor-overflate-1323712/ */
-    background-image:url(pexels_marble.jpg);
+    background-image:url(/bilder/pexels_marble.jpg);
     height: 2700px;
 }
 
@@ -226,7 +226,7 @@ justify-content: flex-start;
         grid-column-start: 1;
         grid-column-end: 5;
     /* Kilde til bakgrunnsbildet i header: https://www.pexels.com/nb-no/bilde/male-maleri-abstrakt-moderne-kunst-2693212/ */
-        background-image:url(painting.jpg);
+        background-image:url(/bilder/painting.jpg);
         color: rgb(160, 174, 188);
         font-size: 95px;
         text-align: center;
@@ -240,7 +240,7 @@ justify-content: flex-start;
         grid-column-start: 1;
         grid-column-end: 5;
     /* Kilde til bakgrunnsbildet i menyen: https://www.pexels.com/nb-no/bilde/hvit-klinkekule-marmor-overflate-1323712/ */
-        background-image:url(pexels_marble.jpg);
+        background-image:url(/bilder/pexels_marble.jpg);
         height: 500px; 
     }
     
@@ -334,7 +334,7 @@ justify-content: flex-start;
         grid-column-start: 1;
         grid-column-end: 5;
     /* Kilde til bakgrunnsbildet i header: https://www.pexels.com/nb-no/bilde/male-maleri-abstrakt-moderne-kunst-2693212/ */
-        background-image:url(painting.jpg);
+        background-image:url(/bilder/painting.jpg);
         color: rgb(160, 174, 188);
         font-size: 130px;
         text-align: center;
@@ -348,7 +348,7 @@ justify-content: flex-start;
         grid-column-start: 1;
         grid-column-end: 5;
     /* Kilde til bakgrunnsbildet i menyen: https://www.pexels.com/nb-no/bilde/hvit-klinkekule-marmor-overflate-1323712/ */
-        background-image:url(pexels_marble.jpg);
+        background-image:url(/bilder/pexels_marble.jpg);
         height: 350px;
     }
     

@@ -14,6 +14,7 @@ body {
     grid-template-columns: 175px 1fr 1fr 1fr;
     grid-template-rows: 250px 600px 100px;
 
+
     gap: 5px;
     padding: 10px #fff;
     box-sizing: border-box;
@@ -28,7 +29,7 @@ body {
     grid-column-start: 1;
     grid-column-end: 5;
 /* Kilde til bakgrunnsbildet i header: https://www.pexels.com/nb-no/bilde/male-maleri-abstrakt-moderne-kunst-2693212/ */
-    background-image:url(painting.jpg);
+    background-image:url(/bilder/painting.jpg);
     color: rgb(160, 174, 188);
     font-size: 60px;
     text-align: center;
@@ -42,8 +43,8 @@ body {
     grid-column-start: 1;
     grid-column-end: auto;
 /* Kilde til bakgrunnsbildet i menyen: https://www.pexels.com/nb-no/bilde/hvit-klinkekule-marmor-overflate-1323712/ */
-    background-image:url(pexels_marble.jpg);
-    height: 2700px;
+    background-image:url(/bilder/pexels_marble.jpg);
+    height: 7700px;
 }
 
 .content-main{
@@ -51,6 +52,7 @@ body {
     grid-row-end: auto;
     grid-column-start: 2;
     grid-column-end: 5;
+    height: 500px;
     background-color: #fff
 }
 
@@ -61,13 +63,17 @@ body {
     grid-column-end: 5;
     background-color: rgb(53, 53, 53);
 
+
     color: #fff;
     text-align: center;
     line-height: 6;
     font-size: small;
+
+
     
     height: 100px;
-    margin-top: 2110px;
+    margin-top: 7100px;
+    
 }
 
 /* Kilde til oppsett av menypunkter og hover-effekt: https://www.youtube.com/watch?v=Zn-zqtyLDVU&ab_channel=zFunxWebDevelopementIdeas */
@@ -77,6 +83,7 @@ ul {
     padding: 0;
     text-decoration: none;
     padding: 8px;
+    
 }
 
 ul li a{
@@ -107,18 +114,84 @@ justify-content: flex-start;
 
 .flex-item-1 {
     width: 1215px;
-    height: 570px;
+    height: 400px;
     margin: 3px;
     background-color: rgb(255, 255, 255);
     color: rgb(121, 112, 124);
+    
+    
+}  
+
+
+
+/* Tabell analyse */
+/* Kilde til utforming av tabellen: https://www.youtube.com/watch?v=yJQ9JEqznPM  */
+#table {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 70px 820px 70px 200px 70px 250px 70px 180px 70px 400px 70px 200px 70px 370px 70px 380px 70px 600px 70px 600px;
+
+}
+
+.main {
+    background-color: rgb(243, 238, 247);
+}
+
+.mainleft {
+    background-color: rgb(243, 238, 247);
+}
+
+#table > div {
+    padding: 20px;
+    text-align: center;
+    border-left: 2px solid rgb(236, 233, 239);
+    border-top: 2px solid rgb(236, 233, 239);
+    border-right: 2px solid rgb(236, 233, 239);
+    border-bottom: 2px solid rgb(236, 233, 239);
+
 }
 
 
-.sitat {
-    text-indent: 150px;
-    margin: 5px;
-}    
+/* Breakpoint tabell */
+/* Media quiery breakpoint kilder: https://stackoverflow.com/questions/11796297/div-show-hide-media-query og https://lms.webtricks.blog/kurs/webutvikling/responsivt-design/media-queries */
+@media only screen and (min-width: 661px)  {
+    #table3 {display: none;}
+    .main3 {display: none;}
+    .mainleft3 {display: none;}
+}
 
+@media only screen and (max-width: 660px)  {
+    #table {display: none}
+    .main {display: none}
+    .mainleft {display: none;}
+    .content-side {height: 350px;}
+    .content-footer{margin-top: 4000px}
+    #table3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 900px 100px 300px 100px 300px 100px 250px 100px 500px 100px 370px 100px 470px 100px 470px 100px 700px 100px 700px;
+    }
+
+    .main3 {
+        background-color: rgb(243, 238, 247);
+        }
+    
+    .mainleft3 {
+        background-color: rgb(243, 238, 247);
+        }   
+    
+    #table3 > div {
+        padding: 20px;
+        text-align: center;
+        border-left: 2px solid rgb(236, 233, 239);
+        border-top: 2px solid rgb(236, 233, 239);
+        border-right: 2px solid rgb(236, 233, 239);
+        border-bottom: 2px solid rgb(236, 233, 239);
+        }
+    
+}
+
+ 
 
 
 
@@ -136,7 +209,8 @@ justify-content: flex-start;
     
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 460px 350px 250px 200px;
+        grid-template-rows: 460px 340px 1800px 200px;
+    
 
         gap: 5px;
         padding: 10px #fff;
@@ -156,7 +230,7 @@ justify-content: flex-start;
         grid-column-start: 1;
         grid-column-end: 5;
     /* Kilde til bakgrunnsbildet i header: https://www.pexels.com/nb-no/bilde/male-maleri-abstrakt-moderne-kunst-2693212/ */
-        background-image:url(painting.jpg);
+        background-image:url(/bilder/painting.jpg);
         color: rgb(160, 174, 188);
         font-size: 95px;
         text-align: center;
@@ -170,9 +244,10 @@ justify-content: flex-start;
         grid-column-start: 1;
         grid-column-end: 5;
     /* Kilde til bakgrunnsbildet i menyen: https://www.pexels.com/nb-no/bilde/hvit-klinkekule-marmor-overflate-1323712/ */
-        background-image:url(pexels_marble.jpg);
-        height: 350px;
+        background-image:url(/bilder/pexels_marble.jpg);
+        height: 500px;
     }
+    
     
     .content-main{
         grid-row-start: 3;
@@ -182,7 +257,9 @@ justify-content: flex-start;
         background-color: rgb(236, 233, 239);
         height: 0px;
         font-size: 25px;
+        
     }
+    
     
     .content-footer{
         grid-row-start: 4;
@@ -190,12 +267,12 @@ justify-content: flex-start;
         grid-column-start: 1;
         grid-column-end: 5;
         background-color: rgb(53, 53, 53);
-        height: 200px;
+        height: 300px;
     
         color: #fff;
         text-align: center;
-        line-height: 10;
-        font-size:medium;
+        line-height: 12;
+        font-size:x-large;
     }
 
 
@@ -222,15 +299,12 @@ justify-content: flex-start;
 
     .flex-item-1 {
         width: 1215px;
-        height: 271px;
         margin: 3px;
 
         color: rgb(121, 112, 124);
+        height: 470px;
     }
 }
-
-
-
 
 
 @media only screen and (min-width: 0px) and (max-width: 660px)  {
@@ -243,7 +317,7 @@ justify-content: flex-start;
     
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 560px 350px 250px 300px;
+        grid-template-rows: 560px 350px 5600px 300px;
     
 
         gap: 5px;
@@ -264,12 +338,13 @@ justify-content: flex-start;
         grid-column-start: 1;
         grid-column-end: 5;
     /* Kilde til bakgrunnsbildet i header: https://www.pexels.com/nb-no/bilde/male-maleri-abstrakt-moderne-kunst-2693212/ */
-        background-image:url(painting.jpg);
+        background-image:url(/bilder/painting.jpg);
         color: rgb(160, 174, 188);
         font-size: 130px;
         text-align: center;
         text-indent: 0rem;
         line-height: 5;
+        
     }
     
     .content-side {
@@ -278,9 +353,9 @@ justify-content: flex-start;
         grid-column-start: 1;
         grid-column-end: 5;
     /* Kilde til bakgrunnsbildet i menyen: https://www.pexels.com/nb-no/bilde/hvit-klinkekule-marmor-overflate-1323712/ */
-        background-image:url(pexels_marble.jpg);
-        height: 350px;
+        background-image:url(/bilder/pexels_marble.jpg);
     }
+    
     
     .content-main{
         grid-row-start: 3;
@@ -292,6 +367,7 @@ justify-content: flex-start;
         font-size: 35px;
     }
     
+    
     .content-footer{
         grid-row-start: 4;
         grid-row-end: auto;
@@ -299,12 +375,15 @@ justify-content: flex-start;
         grid-column-end: 5;
         background-color: rgb(53, 53, 53);
         height: 300px;
-
+        
+    
         color: #fff;
         text-align: center;
-        line-height: 16;
-        font-size:large;
+        line-height: 12;
+        font-size:x-large;
     }
+
+
 
     /* Kilde til oppsett av menypunkter og hover-effekt: https://www.youtube.com/watch?v=Zn-zqtyLDVU&ab_channel=zFunxWebDevelopementIdeas */
     ul {
@@ -316,6 +395,7 @@ justify-content: flex-start;
         flex-direction:row;
         font-size: 55px;
         justify-content:space-evenly;
+       
     }
     
     ul li a{
@@ -324,16 +404,18 @@ justify-content: flex-start;
         color: rgb(93, 119, 144);
         display: block;
         transition: 0.3s;
-        line-height: 0;
+        line-height: 0;   
     }
+    
 
     .flex-item-1 {
         width: 1215px;
-        height: 671px;
+        height: 600px;
         margin: 3px;
 
         color: rgb(121, 112, 124);
     }
+    
 }
 
 
@@ -368,43 +450,3 @@ justify-content: flex-start;
     color: white;
   }
 
-
-
-/* Kilde til kontaktskjema: https://codepen.io/ZachSaucier/pen/jOwNvO */
-form { max-width:800px; margin:50px auto; margin-left: 0px;}
-
-.feedback-input {
-  color:rgb(35, 35, 35);
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  background-color: transparent;
-  border:2px solid rgb(118, 119, 136);
-  transition: all 0.5s;
-  width:100%;
-  box-sizing: border-box;
-  padding: 15px;
-  margin-bottom: 15px;
-  line-height: 25px;
-  
-}
-
-textarea {
-  height: 150px;
-  line-height: 100%;
-}
-
-[type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
-  background:rgb(118, 119, 136);
-  color:white;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  font-size:24px;
-  margin-top:-4px;
-  padding-top:18px;
-  padding-bottom:10px;
-  transition: all 0.5s;
-}
-[type="submit"]:hover { background:rgb(94, 95, 108); }
